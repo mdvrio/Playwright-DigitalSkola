@@ -1,0 +1,434 @@
+{
+  "config": {
+    "configFile": "D:\\Pend\\bootcamp\\Tugas\\sesi7fix\\Playwright-DigitalSkola\\playwright.config.js",
+    "rootDir": "D:/Pend/bootcamp/Tugas/sesi7fix/Playwright-DigitalSkola/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "report/json/report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "report/html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Pend/bootcamp/Tugas/sesi7fix/Playwright-DigitalSkola/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "D:/Pend/bootcamp/Tugas/sesi7fix/Playwright-DigitalSkola/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.49.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api.test.js",
+      "file": "api.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Reqres API Automation Tests",
+          "file": "api.test.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "GET /users?page=2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 230,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [
+                        {
+                          "text": "strict mode: \"items\" is 6-tuple, but minItems or maxItems/additionalItems are not specified or different at path \"#/properties/data\"\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-01-03T13:58:35.607Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19c9e44c3af2d43c81b8-b48507abffb0485e10d9",
+              "file": "api.test.js",
+              "line": 7,
+              "column": 1
+            },
+            {
+              "title": "POST /users",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 587,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-03T13:58:35.598Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19c9e44c3af2d43c81b8-1e655834c1012259691b",
+              "file": "api.test.js",
+              "line": 19,
+              "column": 1
+            },
+            {
+              "title": "DELETE /users/:id",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 592,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-03T13:58:35.651Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19c9e44c3af2d43c81b8-4b240e48d7cafc17b270",
+              "file": "api.test.js",
+              "line": 32,
+              "column": 1
+            },
+            {
+              "title": "PUT /users/:id",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 597,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-03T13:58:35.597Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19c9e44c3af2d43c81b8-32fd3885ca7312884a4a",
+              "file": "api.test.js",
+              "line": 41,
+              "column": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "coba.spec.js",
+      "file": "coba.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Reqresin API Test",
+          "file": "coba.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-1 GET Users",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Google Chrome",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 68,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [
+                        {
+                          "text": "strict mode: \"items\" is 6-tuple, but minItems or maxItems/additionalItems are not specified or different at path \"#/properties/data\"\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-01-03T13:58:35.853Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "26303d08409b77335e94-fe7d9cb1d23a62bcf1ec",
+              "file": "coba.spec.js",
+              "line": 7,
+              "column": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "test.spec.js",
+      "file": "test.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Test Case1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 2,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Dieksekusi dari test case1\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-03T13:58:35.930Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "31be70adcd52654ff551-df223c831d9ec84a0c7e",
+          "file": "test.spec.js",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "Test Case2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Dieksekusi dari test case2\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-03T13:58:35.936Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "31be70adcd52654ff551-a9124c8852172394673c",
+          "file": "test.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "Test Case get",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 45,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  page: \u001b[33m2\u001b[39m,\n  per_page: \u001b[33m6\u001b[39m,\n  total: \u001b[33m12\u001b[39m,\n  total_pages: \u001b[33m2\u001b[39m,\n  data: [\n    {\n      id: \u001b[33m7\u001b[39m,\n      email: \u001b[32m'michael.lawson@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'Michael'\u001b[39m,\n      last_name: \u001b[32m'Lawson'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/7-image.jpg'\u001b[39m\n    },\n    {\n      id: \u001b[33m8\u001b[39m,\n      email: \u001b[32m'lindsay.ferguson@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'Lindsay'\u001b[39m,\n      last_name: \u001b[32m'Ferguson'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/8-image.jpg'\u001b[39m\n    },\n    {\n      id: \u001b[33m9\u001b[39m,\n      email: \u001b[32m'tobias.funke@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'Tobias'\u001b[39m,\n      last_name: \u001b[32m'Funke'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/9-image.jpg'\u001b[39m\n    },\n    {\n      id: \u001b[33m10\u001b[39m,\n      email: \u001b[32m'byron.fields@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'Byron'\u001b[39m,\n      last_name: \u001b[32m'Fields'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/10-image.jpg'\u001b[39m\n    },\n    {\n      id: \u001b[33m11\u001b[39m,\n      email: \u001b[32m'george.edwards@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'George'\u001b[39m,\n      last_name: \u001b[32m'Edwards'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/11-image.jpg'\u001b[39m\n    },\n    {\n      id: \u001b[33m12\u001b[39m,\n      email: \u001b[32m'rachel.howell@reqres.in'\u001b[39m,\n      first_name: \u001b[32m'Rachel'\u001b[39m,\n      last_name: \u001b[32m'Howell'\u001b[39m,\n      avatar: \u001b[32m'https://reqres.in/img/faces/12-image.jpg'\u001b[39m\n    }\n  ],\n  support: {\n    url: \u001b[32m'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral'\u001b[39m,\n    text: \u001b[32m'Tired of writing endless social media content? Let Content Caddy generate it for you.'\u001b[39m\n  }\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-03T13:58:35.941Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "31be70adcd52654ff551-ca00df316e505870b827",
+          "file": "test.spec.js",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "TC-2 POST",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 428,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33m201\u001b[39m\n"
+                    },
+                    {
+                      "text": "{\n  name: \u001b[32m'eve.holt@reqres.in'\u001b[39m,\n  job: \u001b[32m'pistol'\u001b[39m,\n  id: \u001b[32m'361'\u001b[39m,\n  createdAt: \u001b[32m'2025-01-03T13:58:36.833Z'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-03T13:58:35.992Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "31be70adcd52654ff551-6199226a0ed3a8f0899a",
+          "file": "test.spec.js",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-01-03T13:58:34.634Z",
+    "duration": 1810.9219999999998,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
